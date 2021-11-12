@@ -1,4 +1,4 @@
-FROM quay.io/ibmgaragecloud/node:its-stretch
+FROM quay.io/ibmgaragecloud/node:lts-stretch
 
 WORKDIR /app
 COPY . .
