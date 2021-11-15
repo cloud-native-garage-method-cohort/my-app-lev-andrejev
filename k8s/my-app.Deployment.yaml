@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-react-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app.kubernetes.io/instance: my-react-app
+      app.kubernetes.io/name: my-react-app
+  template: 
+    metadata:
+      labels:
+        app.kubernetes.io/instance: my-react-app
+        app.kubernetes.io/name: my-react-app
+    spec:
+      containers:
+      - name: my-react-app
+        image: quay.io/levandrejev/my-app:6cd283294074d02836f780e86817dd600ca7d8fa
