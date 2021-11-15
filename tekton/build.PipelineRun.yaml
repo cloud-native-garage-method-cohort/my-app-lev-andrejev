@@ -9,6 +9,8 @@ spec:
       value: https://github.com/cloud-native-garage-method-cohort/my-app-lev-andrejev
     - name: image-repo
       value: quay.io/levandrejev/my-app
+    - name: app-name
+      value: my-react-app
   pipelineRef:
     name: build-pipeline
   workspaces:
